@@ -15,12 +15,14 @@
 
 6.一个函数的参数是一个引用。例如void func(C & a); 那么你不能把一个没有名字的临时对象传给他，引用的作用是给变量起别名。若连一个基础得到名字都没有，何谈别名？
 
-class MyCmp
-{
-public:
-    bool operator()(int num1, int num2)
-    {
-        return num1 > num2; //真的东西排在前面
-    }
-}
-sort(arr, arr + N，MyCmp());
+
+	class MyCmp
+	{
+	public:
+	    bool operator()(int num1, int num2)
+	    {
+		return num1 > num2; //真的东西排在前面
+	    }
+	}
+	sort(arr, arr + N，MyCmp());
+
