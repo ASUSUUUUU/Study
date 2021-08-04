@@ -25,4 +25,5 @@
 	    }
 	}
 	sort(arr, arr + N，MyCmp());
+	sort(arr, arr + N，greater<int>());//STL内建仿函数
 
