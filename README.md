@@ -27,3 +27,4 @@
 	sort(arr, arr + N，MyCmp());
 	sort(arr, arr + N，greater<int>());//STL内建仿函数
 
+7.int和int的运算，得到的还是int，就算你用double接收，也还是会将int/int得到的int结果给double。所以你如果真的想保留小数值必须先将int强转成double
